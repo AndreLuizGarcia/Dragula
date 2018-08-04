@@ -1,0 +1,41 @@
+<ion-header>
+  <!---<ion-navbar> -->
+    <ion-title>
+      Jira Kanban 
+    </ion-title>
+  <!--- </ion-navbar> -->
+</ion-header>
+ <br>
+ <br>
+ <br>
+
+<ion-content>
+  <ion-row>
+    <ion-col col-4 class="left">
+      <div class="header">To Do</div>
+      <ion-list [dragula]='"my-bag"' [dragulaModel]="q1">
+        <button ion-item *ngFor="let item of q1" detail-none>
+          {{item}}
+      </button>
+      </ion-list>
+    </ion-col>
+
+    <ion-col col-4 class="left">
+      <div class="header">Doing</div>
+      <ion-list [dragula]='"my-bag"' [dragulaModel]="q2">
+        <button ion-item *ngFor="let item of q2" detail-none>
+          {{item}}
+      </button>
+      </ion-list>
+    </ion-col>
+ 
+    <ion-col col-4 class="right">
+      <div class="header">Done</div>
+      <ion-list [dragula]='"my-bag"' [dragulaModel]="q3">
+        <button ion-item *ngFor="let item of q3" detail-none>
+          {{item}}
+        </button>
+      </ion-list>
+    </ion-col>
+  </ion-row>
+</ion-content>

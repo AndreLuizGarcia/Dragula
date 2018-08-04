@@ -1,0 +1,7 @@
+{
+  "name": "devdactic-drag",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
